@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="Git_test project" default="print_msg">
+	
+	<property name="sitename" value="coolops"/>
+	
+	<target	 name="print_msg" depends="dependency">
+ 		<echo>Hello World: ${ant.version}</echo>
+	</target>
+	
+	<target name="dependency">
+		<echo>Hello World2:${ant.home} Sitename=${sitename}</echo>
+        </target>
+</project>
